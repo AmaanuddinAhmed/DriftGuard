@@ -85,12 +85,10 @@ app.post("/api/monitor/config", async (req, res) => {
       alerts: detectedAlerts,
     });
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        error: "Internal Engine processing error",
-        details: error.message,
-      });
+    res.status(500).json({
+      error: "Internal Engine processing error",
+      details: error.message,
+    });
   }
 });
 
@@ -101,6 +99,47 @@ app.get("/api/alerts", async (req, res) => {
     res.json(alerts);
   } catch (error) {
     res.status(500).json({ error: error.message });
+  }
+});
+
+// Route to trigger auto-remediation and overwrite/fix the system configuration
+app.post("/api/remediate", async (req, res) => {
+  try {
+    const { systemId, driftedKey } = req.body;
+
+    if (!systemId || !driftedKey) {
+      return res
+        .status(400)
+        .json({ error: "Missing systemId or driftedKey parameters." });
+    }
+
+    // 1. In a real-world scenario, this is where your backend would fire an Ansible Playbook,
+    // an AWS Systems Manager document, or an API call to revert the config back to the baseline.
+    // For our hackathon simulation, we mark the database state as 'Remediated'.
+
+    const updatedAlert = await DriftAlert.findOneAndUpdate(
+      { systemId, driftedKey, status: "Active Drift" },
+      { $set: { status: "Remediated" } },
+      { new: true },
+    );
+
+    if (!updatedAlert) {
+      return res
+        .status(404)
+        .json({
+          message:
+            "No active drift alert found for this configuration parameter.",
+        });
+    }
+
+    res.status(200).json({
+      message: `System remediation successful. Parameter '${driftedKey}' has been forced back to its gold baseline.`,
+      remediatedAlert: updatedAlert,
+    });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ error: "Remediation routine failed", details: error.message });
   }
 });
 
