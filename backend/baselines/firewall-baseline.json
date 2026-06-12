@@ -1,0 +1,10 @@
+{
+  "systemId": "FW-SGP-01",
+  "systemName": "SG Core Firewall",
+  "environment": "Production",
+  "allowAllTraffic": false,
+  "inboundPortsAllowed": [80, 443],
+  "mfaEnforced": true,
+  "encryptionLevel": "TLSv1.3",
+  "loggingStatus": "enabled"
+}
