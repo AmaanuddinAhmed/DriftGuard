@@ -150,15 +150,16 @@ const App = () => {
 
       <MetricsBar alerts={alerts} summary={summary} />
 
+      <AddDriftEvent
+        onCreated={(created) => {
+          loadAlerts();
+          loadSummary();
+          setSelected(created);
+        }}
+      />
+
       <div className="row">
         <div className="col-md-5 mb-3">
-          <AddDriftEvent
-            onCreated={(created) => {
-              loadAlerts();
-              loadSummary();
-              setSelected(created);
-            }}
-          />
           <IncidentFeed
             alerts={alerts}
             selectedId={selected?._id}

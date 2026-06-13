@@ -30,7 +30,10 @@ const DriftInspector = ({ alert, onRemediated }) => {
   const isActive = alert.status === "Active Drift";
 
   return (
-    <div className="card-dark p-4 h-100">
+    <div
+      className="card-dark p-4"
+      style={{ maxHeight: "70vh", overflowY: "auto" }}
+    >
       <div className="d-flex justify-content-between align-items-start mb-3">
         <div>
           <h5 className="fw-bold mb-1">{alert.systemName}</h5>
