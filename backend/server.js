@@ -4,8 +4,10 @@ const cors = require("cors");
 const { detailedDiff } = require("deep-object-diff");
 const fs = require("fs");
 const csv = require("csv-parser");
+const { evaluateDrift } = require("./utils/riskEngine");
 
-const assetBaselines = require("./data/baseline_configs.json");
+const baselineConfigs = require("./data/baseline_configs.json");
+const firewallBaseline = require("./baselines/firewall-baseline.json");
 const DriftAlert = require("./models/DriftAlert");
 
 const app = express();
@@ -98,34 +100,51 @@ app.post("/api/monitor/config", async (req, res) => {
 app.post("/api/admin/ingest-csv", (req, res) => {
   const results = [];
   let insertedCount = 0;
+  let falsePositivesFiltered = 0;
 
-  // Make sure your config_drift_events.csv is inside the /data folder!
   fs.createReadStream("./data/config_drift_events.csv")
     .pipe(csv())
     .on("data", (row) => {
       results.push(row);
     })
     .on("end", async () => {
-      console.log(
-        `Parsed ${results.length} rows from SG CSV. Pushing to database...`,
-      );
+      console.log(`Parsed ${results.length} rows. Running Risk Engine...`);
 
-      // Clear the old dummy data out before importing the real hackathon data
       await DriftAlert.deleteMany({});
 
       for (const event of results) {
-        // Map SG's exact CSV headers to our Mongoose Schema
+        // 1. RUN THE RISK ENGINE
+        const analysis = evaluateDrift(
+          event.control_name,
+          event.baseline_value,
+          event.current_value,
+          event.change_reason,
+          event.operator_name,
+          event.severity,
+        );
+
+        // 2. FILTER OUT FALSE POSITIVES
+        // If it's a benign change, we skip adding it to the active alerts dashboard
+        if (!analysis.isAnomaly) {
+          falsePositivesFiltered++;
+          continue;
+        }
+
+        // 3. SAVE ACTUAL ANOMALIES
         const newAlert = new DriftAlert({
           eventId: event.drift_event_id,
-          systemName: event.control_type, // e.g., "AWS CloudTrail" or "Firewall"
-          severity: event.severity ? event.severity.toUpperCase() : "LOW",
+          systemName: event.control_type,
+          severity: analysis.severity,
           driftedKey: event.control_name,
           expectedValue: event.baseline_value,
           actualValue: event.current_value,
-          complianceImpact: event.compliance_impact,
-          changedBy: `${event.operator_name} (${event.operator_email})`, // Combine name and email
-          changeReason: event.change_reason,
-          status: event.status === "Resolved" ? "Remediated" : "Active Drift",
+
+          // USE THE ENGINE'S GENERATED COMPLIANCE IMPACT HERE
+          complianceImpact: analysis.complianceImpact,
+
+          changedBy: `${event.operator_name} (${event.operator_email})`,
+          changeReason: analysis.explanation,
+          status: event.status === "Mitigated" ? "Remediated" : "Active Drift",
           timestamp: event.change_date
             ? new Date(event.change_date)
             : Date.now(),
@@ -136,8 +155,10 @@ app.post("/api/admin/ingest-csv", (req, res) => {
       }
 
       res.status(200).json({
-        message: "Official Societe Generale Dataset successfully ingested!",
-        totalProcessed: insertedCount,
+        message: "Data ingestion & analysis complete!",
+        totalProcessed: results.length,
+        actualThreatsLogged: insertedCount,
+        falsePositivesFiltered: falsePositivesFiltered,
       });
     });
 });
