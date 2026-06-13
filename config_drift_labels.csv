@@ -1,0 +1,1001 @@
+event_id,is_anomaly,anomaly_type,severity,explanation
+DRF00878,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00801,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-68 control configuration.
+DRF00918,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-94 control configuration.
+DRF00660,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-63 control configuration.
+DRF00628,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00574,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-44 control configuration.
+DRF00550,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-66 control configuration.
+DRF00572,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-21 control configuration.
+DRF00684,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-82 control configuration.
+DRF00949,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-78 control configuration.
+DRF00635,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00847,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00581,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00560,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-48 control configuration.
+DRF00638,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-55 control configuration.
+DRF00895,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-65 control configuration.
+DRF00659,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-99 control configuration.
+DRF00561,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-55 control configuration.
+DRF00718,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00741,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00837,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00715,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00709,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00809,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-87 control configuration.
+DRF00633,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-67 control configuration.
+DRF00661,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00816,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00727,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-20 control configuration.
+DRF00534,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00699,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00605,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-99 control configuration.
+DRF00806,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00898,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-48 control configuration.
+DRF00924,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00862,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00698,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-64 control configuration.
+DRF00555,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00587,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00848,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00675,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00773,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00645,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-8 control configuration.
+DRF00513,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00526,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-45 control configuration.
+DRF00728,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00789,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-95 control configuration.
+DRF00763,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00948,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-56 control configuration.
+DRF00761,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00721,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-42 control configuration.
+DRF00977,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00632,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00600,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00881,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00689,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-85 control configuration.
+DRF00649,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00662,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-35 control configuration.
+DRF00855,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-32 control configuration.
+DRF00759,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00879,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-39 control configuration.
+DRF00614,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-56 control configuration.
+DRF00615,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00586,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-53 control configuration.
+DRF00788,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00760,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00640,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00694,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-67 control configuration.
+DRF00891,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-53 control configuration.
+DRF00971,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-16 control configuration.
+DRF00960,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00663,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00573,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-65 control configuration.
+DRF00822,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-84 control configuration.
+DRF00729,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-23 control configuration.
+DRF00946,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00749,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-39 control configuration.
+DRF00853,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00838,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00543,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-56 control configuration.
+DRF00778,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00720,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-62 control configuration.
+DRF00913,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00834,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-2 control configuration.
+DRF00963,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00716,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00902,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-71 control configuration.
+DRF00620,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-47 control configuration.
+DRF00747,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00784,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-82 control configuration.
+DRF00713,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-26 control configuration.
+DRF00692,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-48 control configuration.
+DRF00939,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-92 control configuration.
+DRF00870,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00927,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-62 control configuration.
+DRF00805,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00935,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-38 control configuration.
+DRF00790,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00958,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00642,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-72 control configuration.
+DRF00676,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-57 control configuration.
+DRF00643,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00685,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00703,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-1 control configuration.
+DRF00820,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-54 control configuration.
+DRF00969,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00823,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-43 control configuration.
+DRF00681,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-97 control configuration.
+DRF00722,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-51 control configuration.
+DRF00854,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00830,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-5 control configuration.
+DRF00764,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-16 control configuration.
+DRF00514,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00566,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-13 control configuration.
+DRF00708,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-57 control configuration.
+DRF00677,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00931,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00511,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-23 control configuration.
+DRF00655,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00917,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-47 control configuration.
+DRF00505,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00697,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-78 control configuration.
+DRF00723,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-80 control configuration.
+DRF00733,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00707,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00993,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-42 control configuration.
+DRF00814,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-54 control configuration.
+DRF00646,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00683,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00617,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-53 control configuration.
+DRF00567,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-30 control configuration.
+DRF00859,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-20 control configuration.
+DRF00690,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00619,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00531,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-43 control configuration.
+DRF00850,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-24 control configuration.
+DRF00518,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-95 control configuration.
+DRF00880,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-68 control configuration.
+DRF00568,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-38 control configuration.
+DRF00687,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-12 control configuration.
+DRF00545,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-37 control configuration.
+DRF00626,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00979,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00904,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00980,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00783,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00951,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-61 control configuration.
+DRF00865,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00706,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-11 control configuration.
+DRF00930,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00582,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00885,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00842,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-82 control configuration.
+DRF00651,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-13 control configuration.
+DRF00841,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00625,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-92 control configuration.
+DRF00771,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-44 control configuration.
+DRF00972,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-80 control configuration.
+DRF00840,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00604,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-76 control configuration.
+DRF00844,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-21 control configuration.
+DRF00769,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-82 control configuration.
+DRF00932,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-99 control configuration.
+DRF00593,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-92 control configuration.
+DRF00813,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00945,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00868,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-14 control configuration.
+DRF00748,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00579,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-81 control configuration.
+DRF00732,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00909,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00589,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00750,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00710,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00538,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-23 control configuration.
+DRF00886,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-48 control configuration.
+DRF00644,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00575,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00541,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00657,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00896,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00702,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00893,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00957,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-72 control configuration.
+DRF00553,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-14 control configuration.
+DRF00857,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00670,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00565,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00668,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-97 control configuration.
+DRF00992,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-67 control configuration.
+DRF00785,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-27 control configuration.
+DRF00781,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-5 control configuration.
+DRF00767,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00787,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-61 control configuration.
+DRF00768,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00995,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00966,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-49 control configuration.
+DRF00558,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00776,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-32 control configuration.
+DRF00516,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00867,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-63 control configuration.
+DRF00671,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00731,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00563,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00938,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-41 control configuration.
+DRF00905,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-33 control configuration.
+DRF00967,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-35 control configuration.
+DRF00664,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00888,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00883,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-86 control configuration.
+DRF00777,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-72 control configuration.
+DRF00607,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00606,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-76 control configuration.
+DRF00623,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-19 control configuration.
+DRF00525,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-48 control configuration.
+DRF00641,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00982,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-35 control configuration.
+DRF00981,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00926,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-75 control configuration.
+DRF00990,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00874,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-67 control configuration.
+DRF00860,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-58 control configuration.
+DRF00976,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00539,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00549,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-80 control configuration.
+DRF00576,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00826,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-45 control configuration.
+DRF00695,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00523,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-46 control configuration.
+DRF00983,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00630,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-2 control configuration.
+DRF00569,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00907,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-12 control configuration.
+DRF00611,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-10 control configuration.
+DRF00596,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00827,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-29 control configuration.
+DRF00691,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00736,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-17 control configuration.
+DRF00766,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-85 control configuration.
+DRF00595,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00765,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-47 control configuration.
+DRF00921,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00752,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-3 control configuration.
+DRF00557,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00871,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00701,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-30 control configuration.
+DRF00742,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00598,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00621,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00524,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-78 control configuration.
+DRF00961,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-88 control configuration.
+DRF00897,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00570,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00753,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-21 control configuration.
+DRF00547,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-53 control configuration.
+DRF00845,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00770,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00594,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-60 control configuration.
+DRF00744,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00588,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-3 control configuration.
+DRF00737,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00601,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00712,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-91 control configuration.
+DRF00900,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-40 control configuration.
+DRF00536,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00751,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00665,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-48 control configuration.
+DRF00704,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00758,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00546,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-16 control configuration.
+DRF00968,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-42 control configuration.
+DRF00666,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00811,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-70 control configuration.
+DRF00912,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-10 control configuration.
+DRF00839,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00793,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-70 control configuration.
+DRF00762,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00940,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00627,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-25 control configuration.
+DRF00812,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-11 control configuration.
+DRF00817,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00564,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-16 control configuration.
+DRF00987,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00800,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00636,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-84 control configuration.
+DRF00624,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00916,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-62 control configuration.
+DRF00782,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00680,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00519,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00756,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-54 control configuration.
+DRF00688,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00540,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00583,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00835,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00952,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-5 control configuration.
+DRF00910,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-36 control configuration.
+DRF00833,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-89 control configuration.
+DRF00802,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-63 control configuration.
+DRF00755,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00774,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00872,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00836,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00922,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00610,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00530,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00831,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00542,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00629,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00882,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00599,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-83 control configuration.
+DRF00648,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-66 control configuration.
+DRF00856,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00556,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-39 control configuration.
+DRF00779,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-50 control configuration.
+DRF00559,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00772,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-66 control configuration.
+DRF00997,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-44 control configuration.
+DRF00502,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00637,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-65 control configuration.
+DRF00682,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00554,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00804,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-12 control configuration.
+DRF00869,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-28 control configuration.
+DRF00975,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-81 control configuration.
+DRF00962,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00609,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-51 control configuration.
+DRF00973,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-52 control configuration.
+DRF00959,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00510,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-73 control configuration.
+DRF00544,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-29 control configuration.
+DRF00678,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00933,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-89 control configuration.
+DRF00894,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00743,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00673,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00658,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00819,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-95 control configuration.
+DRF00740,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-29 control configuration.
+DRF00890,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-40 control configuration.
+DRF00508,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00500,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-5 control configuration.
+DRF00577,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-58 control configuration.
+DRF00631,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-74 control configuration.
+DRF00986,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00795,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00529,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00955,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-34 control configuration.
+DRF00999,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00851,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-38 control configuration.
+DRF00535,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00852,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-96 control configuration.
+DRF00719,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-70 control configuration.
+DRF00757,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00512,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00618,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-52 control configuration.
+DRF00515,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-21 control configuration.
+DRF00639,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00923,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00864,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00578,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00669,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-5 control configuration.
+DRF00796,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00552,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-51 control configuration.
+DRF00985,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-45 control configuration.
+DRF00622,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-18 control configuration.
+DRF00602,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00580,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-69 control configuration.
+DRF00653,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-64 control configuration.
+DRF00746,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00521,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00735,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-20 control configuration.
+DRF00937,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-90 control configuration.
+DRF00791,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-10 control configuration.
+DRF00527,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-75 control configuration.
+DRF00522,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00509,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-66 control configuration.
+DRF00863,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-39 control configuration.
+DRF00724,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-63 control configuration.
+DRF00533,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-67 control configuration.
+DRF00548,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00908,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-1 control configuration.
+DRF00562,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00903,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-53 control configuration.
+DRF00799,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-99 control configuration.
+DRF00970,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-37 control configuration.
+DRF00953,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00911,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00696,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00974,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-56 control configuration.
+DRF00532,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00808,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-85 control configuration.
+DRF00711,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00989,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-5 control configuration.
+DRF00956,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-94 control configuration.
+DRF00991,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00705,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-33 control configuration.
+DRF00616,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-11 control configuration.
+DRF00920,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00537,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-12 control configuration.
+DRF00647,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00821,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-88 control configuration.
+DRF00797,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-2 control configuration.
+DRF00686,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-11 control configuration.
+DRF00875,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00730,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00726,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-76 control configuration.
+DRF00717,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00928,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-31 control configuration.
+DRF00700,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00603,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00592,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00866,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00947,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00654,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-87 control configuration.
+DRF00551,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-9 control configuration.
+DRF00876,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-50 control configuration.
+DRF00786,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-11 control configuration.
+DRF00613,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-72 control configuration.
+DRF00934,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00994,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-65 control configuration.
+DRF00832,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-73 control configuration.
+DRF00652,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00501,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-11 control configuration.
+DRF00846,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00679,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00815,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00998,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00798,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00584,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00843,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-18 control configuration.
+DRF00507,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00810,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00825,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00950,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00824,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-8 control configuration.
+DRF00943,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00520,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00590,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-5 control configuration.
+DRF00672,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00873,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00754,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00936,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-66 control configuration.
+DRF00944,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-67 control configuration.
+DRF00829,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-22 control configuration.
+DRF00503,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00792,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00693,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-43 control configuration.
+DRF00984,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-30 control configuration.
+DRF00906,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00612,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00828,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-18 control configuration.
+DRF00965,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00739,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-59 control configuration.
+DRF00504,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-48 control configuration.
+DRF00674,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00597,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-69 control configuration.
+DRF00901,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00899,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-73 control configuration.
+DRF00849,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-13 control configuration.
+DRF00780,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-83 control configuration.
+DRF00585,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-92 control configuration.
+DRF00571,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-24 control configuration.
+DRF00914,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00714,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00915,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00861,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00988,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00954,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-50 control configuration.
+DRF00738,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00877,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00734,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-73 control configuration.
+DRF00803,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00996,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00656,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00887,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00941,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-80 control configuration.
+DRF00889,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-69 control configuration.
+DRF00884,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-13 control configuration.
+DRF00925,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-66 control configuration.
+DRF00818,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-75 control configuration.
+DRF00919,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00929,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-69 control configuration.
+DRF00725,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-80 control configuration.
+DRF00528,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00794,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-58 control configuration.
+DRF00667,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-67 control configuration.
+DRF00858,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-69 control configuration.
+DRF00978,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-21 control configuration.
+DRF00892,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00964,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-81 control configuration.
+DRF00517,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-74 control configuration.
+DRF00745,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00506,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-78 control configuration.
+DRF00591,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00608,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00807,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00634,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-48 control configuration.
+DRF00942,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-36 control configuration.
+DRF00650,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00775,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00055,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-38 control configuration.
+DRF00330,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-12 control configuration.
+DRF00027,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-39 control configuration.
+DRF00245,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00063,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00336,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-84 control configuration.
+DRF00304,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00110,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00344,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00178,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-87 control configuration.
+DRF00284,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-15 control configuration.
+DRF00070,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00462,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00408,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00433,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00046,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-30 control configuration.
+DRF00411,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-30 control configuration.
+DRF00222,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00360,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-22 control configuration.
+DRF00334,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-71 control configuration.
+DRF00316,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00080,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-80 control configuration.
+DRF00482,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00064,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-1 control configuration.
+DRF00339,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00049,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00042,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-49 control configuration.
+DRF00151,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00291,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00120,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00430,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00174,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00386,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-41 control configuration.
+DRF00379,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-22 control configuration.
+DRF00400,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-68 control configuration.
+DRF00175,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-34 control configuration.
+DRF00016,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00407,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-93 control configuration.
+DRF00157,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-76 control configuration.
+DRF00365,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00390,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-97 control configuration.
+DRF00052,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00058,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00288,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-99 control configuration.
+DRF00299,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00489,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00467,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-20 control configuration.
+DRF00359,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-92 control configuration.
+DRF00458,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00182,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-8 control configuration.
+DRF00154,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-34 control configuration.
+DRF00203,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00013,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-59 control configuration.
+DRF00443,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-35 control configuration.
+DRF00170,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-3 control configuration.
+DRF00098,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00355,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-56 control configuration.
+DRF00342,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00307,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-17 control configuration.
+DRF00324,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00280,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-20 control configuration.
+DRF00340,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-78 control configuration.
+DRF00191,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00045,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00332,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00389,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00441,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-17 control configuration.
+DRF00466,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00219,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-51 control configuration.
+DRF00325,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-95 control configuration.
+DRF00358,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00177,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00103,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-26 control configuration.
+DRF00091,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-40 control configuration.
+DRF00440,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00231,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00439,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-17 control configuration.
+DRF00090,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00075,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00328,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-12 control configuration.
+DRF00144,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-8 control configuration.
+DRF00201,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-75 control configuration.
+DRF00460,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00497,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00057,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00318,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00277,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-20 control configuration.
+DRF00262,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-65 control configuration.
+DRF00004,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-14 control configuration.
+DRF00073,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00393,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00166,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00043,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-17 control configuration.
+DRF00490,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00065,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00031,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-99 control configuration.
+DRF00261,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00431,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00129,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-70 control configuration.
+DRF00078,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-73 control configuration.
+DRF00251,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-19 control configuration.
+DRF00139,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00000,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00242,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00044,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-34 control configuration.
+DRF00341,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00130,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-44 control configuration.
+DRF00145,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-1 control configuration.
+DRF00202,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00403,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-19 control configuration.
+DRF00246,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-98 control configuration.
+DRF00444,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-41 control configuration.
+DRF00221,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00461,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00053,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00309,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00474,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00188,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-46 control configuration.
+DRF00406,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00356,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-18 control configuration.
+DRF00197,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-13 control configuration.
+DRF00418,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-71 control configuration.
+DRF00412,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-82 control configuration.
+DRF00244,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00095,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-12 control configuration.
+DRF00257,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-27 control configuration.
+DRF00122,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00228,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-45 control configuration.
+DRF00423,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-86 control configuration.
+DRF00354,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00117,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00207,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00499,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00305,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-51 control configuration.
+DRF00022,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00153,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-96 control configuration.
+DRF00286,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-40 control configuration.
+DRF00436,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-76 control configuration.
+DRF00449,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00160,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-21 control configuration.
+DRF00494,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00273,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00427,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-33 control configuration.
+DRF00152,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-30 control configuration.
+DRF00493,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00252,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-69 control configuration.
+DRF00320,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00473,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00469,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00141,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-79 control configuration.
+DRF00271,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00371,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-88 control configuration.
+DRF00032,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00391,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-97 control configuration.
+DRF00086,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-70 control configuration.
+DRF00124,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-84 control configuration.
+DRF00268,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-36 control configuration.
+DRF00451,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-76 control configuration.
+DRF00161,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-31 control configuration.
+DRF00094,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-35 control configuration.
+DRF00005,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00212,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00119,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-33 control configuration.
+DRF00126,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-89 control configuration.
+DRF00483,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00351,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-68 control configuration.
+DRF00218,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-34 control configuration.
+DRF00382,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00248,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00195,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-45 control configuration.
+DRF00034,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00301,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-15 control configuration.
+DRF00476,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00311,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-37 control configuration.
+DRF00337,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-1 control configuration.
+DRF00105,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00464,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-51 control configuration.
+DRF00028,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00453,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-46 control configuration.
+DRF00292,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-23 control configuration.
+DRF00131,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-77 control configuration.
+DRF00343,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-29 control configuration.
+DRF00437,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00429,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-65 control configuration.
+DRF00395,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-62 control configuration.
+DRF00485,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00387,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00370,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-25 control configuration.
+DRF00184,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00236,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-16 control configuration.
+DRF00383,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-43 control configuration.
+DRF00088,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-49 control configuration.
+DRF00254,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00217,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00209,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00100,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-3 control configuration.
+DRF00471,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00059,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-51 control configuration.
+DRF00180,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-78 control configuration.
+DRF00404,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-15 control configuration.
+DRF00192,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-30 control configuration.
+DRF00472,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-30 control configuration.
+DRF00283,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00033,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00410,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00294,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-95 control configuration.
+DRF00140,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-38 control configuration.
+DRF00322,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00102,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00146,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00374,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-21 control configuration.
+DRF00054,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-66 control configuration.
+DRF00149,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00376,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00115,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-85 control configuration.
+DRF00014,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00327,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-97 control configuration.
+DRF00147,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00415,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00345,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-52 control configuration.
+DRF00346,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-35 control configuration.
+DRF00159,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-94 control configuration.
+DRF00285,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-96 control configuration.
+DRF00398,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-49 control configuration.
+DRF00164,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00023,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-15 control configuration.
+DRF00186,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-54 control configuration.
+DRF00297,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00067,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00237,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-21 control configuration.
+DRF00204,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-8 control configuration.
+DRF00492,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-14 control configuration.
+DRF00321,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00239,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00470,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00024,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-40 control configuration.
+DRF00003,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00347,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00158,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-45 control configuration.
+DRF00216,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00019,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-99 control configuration.
+DRF00303,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-88 control configuration.
+DRF00150,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00135,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-30 control configuration.
+DRF00106,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00085,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-68 control configuration.
+DRF00111,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00282,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-56 control configuration.
+DRF00425,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-68 control configuration.
+DRF00463,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-39 control configuration.
+DRF00361,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00226,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-66 control configuration.
+DRF00278,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00128,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00421,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00368,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-61 control configuration.
+DRF00040,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00455,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00247,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00420,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00281,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-20 control configuration.
+DRF00185,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-48 control configuration.
+DRF00234,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-85 control configuration.
+DRF00402,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00422,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-98 control configuration.
+DRF00193,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-28 control configuration.
+DRF00338,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00190,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00037,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-77 control configuration.
+DRF00051,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00084,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-62 control configuration.
+DRF00475,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-48 control configuration.
+DRF00256,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00290,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00227,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00113,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00446,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-95 control configuration.
+DRF00196,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00199,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00215,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00253,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-77 control configuration.
+DRF00108,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00036,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00142,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00298,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-52 control configuration.
+DRF00123,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-2 control configuration.
+DRF00498,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-18 control configuration.
+DRF00229,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-90 control configuration.
+DRF00435,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00306,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-89 control configuration.
+DRF00438,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-45 control configuration.
+DRF00021,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-48 control configuration.
+DRF00020,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-25 control configuration.
+DRF00017,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00333,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-20 control configuration.
+DRF00001,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00012,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00276,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-58 control configuration.
+DRF00314,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00093,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00138,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00015,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00468,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-32 control configuration.
+DRF00061,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-88 control configuration.
+DRF00454,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-93 control configuration.
+DRF00132,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00068,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-93 control configuration.
+DRF00097,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-32 control configuration.
+DRF00350,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-15 control configuration.
+DRF00069,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-32 control configuration.
+DRF00265,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00264,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00450,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-25 control configuration.
+DRF00009,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00220,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00189,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00401,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-40 control configuration.
+DRF00459,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-81 control configuration.
+DRF00112,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-47 control configuration.
+DRF00317,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-74 control configuration.
+DRF00249,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00223,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-96 control configuration.
+DRF00060,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00050,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00263,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-13 control configuration.
+DRF00134,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-55 control configuration.
+DRF00210,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00155,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00109,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00076,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00062,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00030,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00388,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00413,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00213,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-84 control configuration.
+DRF00477,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-51 control configuration.
+DRF00041,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00168,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00099,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00165,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00480,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00312,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00331,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00349,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-18 control configuration.
+DRF00364,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-88 control configuration.
+DRF00409,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-70 control configuration.
+DRF00377,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00392,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00416,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-91 control configuration.
+DRF00442,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00381,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-29 control configuration.
+DRF00026,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-67 control configuration.
+DRF00279,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00048,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-42 control configuration.
+DRF00366,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-96 control configuration.
+DRF00038,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-75 control configuration.
+DRF00143,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-64 control configuration.
+DRF00198,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-68 control configuration.
+DRF00481,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-21 control configuration.
+DRF00428,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-80 control configuration.
+DRF00002,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-18 control configuration.
+DRF00018,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-28 control configuration.
+DRF00208,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-57 control configuration.
+DRF00484,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00310,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00114,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-88 control configuration.
+DRF00385,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-38 control configuration.
+DRF00167,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-68 control configuration.
+DRF00183,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00087,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00118,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00323,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-13 control configuration.
+DRF00397,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00171,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-12 control configuration.
+DRF00187,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00179,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-14 control configuration.
+DRF00232,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-46 control configuration.
+DRF00211,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00313,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00419,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00082,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-17 control configuration.
+DRF00496,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-14 control configuration.
+DRF00255,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00491,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-88 control configuration.
+DRF00335,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00260,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-85 control configuration.
+DRF00363,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00396,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00293,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-13 control configuration.
+DRF00116,1,UNAPPROVED_DRIFT,INFO,Deviation detected in Control-47 control configuration.
+DRF00296,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-93 control configuration.
+DRF00066,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00486,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00133,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00319,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00148,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00081,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-23 control configuration.
+DRF00424,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-79 control configuration.
+DRF00399,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00039,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00071,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-54 control configuration.
+DRF00372,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00121,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-46 control configuration.
+DRF00127,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-10 control configuration.
+DRF00487,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00295,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-78 control configuration.
+DRF00300,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00352,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00162,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00488,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00289,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-4 control configuration.
+DRF00206,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00156,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-80 control configuration.
+DRF00240,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00092,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00089,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-73 control configuration.
+DRF00035,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-50 control configuration.
+DRF00235,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-50 control configuration.
+DRF00214,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-13 control configuration.
+DRF00275,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-75 control configuration.
+DRF00308,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-35 control configuration.
+DRF00447,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-59 control configuration.
+DRF00378,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-62 control configuration.
+DRF00394,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00029,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-40 control configuration.
+DRF00169,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-24 control configuration.
+DRF00181,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00405,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00369,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-73 control configuration.
+DRF00079,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00348,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00478,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-69 control configuration.
+DRF00173,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00270,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00225,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00077,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-59 control configuration.
+DRF00194,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00479,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00329,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-40 control configuration.
+DRF00136,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-25 control configuration.
+DRF00230,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-41 control configuration.
+DRF00287,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-48 control configuration.
+DRF00025,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-1 control configuration.
+DRF00269,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-29 control configuration.
+DRF00367,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-4 control configuration.
+DRF00125,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00417,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00274,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-38 control configuration.
+DRF00137,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-68 control configuration.
+DRF00205,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-73 control configuration.
+DRF00426,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-78 control configuration.
+DRF00357,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-24 control configuration.
+DRF00224,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-33 control configuration.
+DRF00414,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00272,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-79 control configuration.
+DRF00362,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00384,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-86 control configuration.
+DRF00163,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-32 control configuration.
+DRF00107,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-94 control configuration.
+DRF00448,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00096,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-6 control configuration.
+DRF00457,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00266,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00047,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00250,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-17 control configuration.
+DRF00241,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00373,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-87 control configuration.
+DRF00380,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00243,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00104,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-73 control configuration.
+DRF00452,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-16 control configuration.
+DRF00006,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-41 control configuration.
+DRF00258,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-49 control configuration.
+DRF00456,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00200,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00465,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00259,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-81 control configuration.
+DRF00432,1,UNAPPROVED_DRIFT,HIGH,Deviation detected in Control-69 control configuration.
+DRF00083,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-25 control configuration.
+DRF00315,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-41 control configuration.
+DRF00176,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00233,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-49 control configuration.
+DRF00074,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00008,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00353,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00172,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00267,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-55 control configuration.
+DRF00007,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-90 control configuration.
+DRF00011,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00010,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00302,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00072,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-69 control configuration.
+DRF00101,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-11 control configuration.
+DRF00495,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00326,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00056,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00445,1,UNAPPROVED_DRIFT,MEDIUM,Deviation detected in Control-84 control configuration.
+DRF00375,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
+DRF00238,1,UNAPPROVED_DRIFT,CRITICAL,Deviation detected in Control-39 control configuration.
+DRF00434,0,BENIGN_STATE,LOW,Configuration matches baseline criteria.
