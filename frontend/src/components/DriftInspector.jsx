@@ -58,6 +58,28 @@ const DriftInspector = ({ alert, onRemediated }) => {
       </div>
 
       <div className="mb-4">
+        <div className="section-label text-info">
+          Engine Analysis & Detection Reason
+        </div>
+        <div
+          className="p-3 rounded"
+          style={{
+            background: "rgba(23, 162, 184, 0.1)",
+            border: "1px solid var(--sg-info, #17a2b8)",
+            color: "#e0e0e0",
+          }}
+        >
+          <span className="mono" style={{ fontSize: "0.95rem" }}>
+            {alert.changeReason}
+          </span>
+        </div>
+        <div className="text-muted small mt-2">
+          <strong>Detected By:</strong> RiskEngine v1.0 |{" "}
+          <strong>Operator:</strong> {alert.changedBy}
+        </div>
+      </div>
+
+      <div className="mb-4">
         <div className="section-label">Compliance Impact</div>
         <div
           className="p-3 rounded d-flex align-items-start gap-2"
