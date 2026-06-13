@@ -2,9 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const { detailedDiff } = require("deep-object-diff");
+const fs = require("fs");
+const csv = require("csv-parser");
 
+const assetBaselines = require("./data/baseline_configs.json");
 const DriftAlert = require("./models/DriftAlert");
-const firewallBaseline = require("./baselines/firewall-baseline.json");
 
 const app = express();
 app.use(express.json());
@@ -92,6 +94,54 @@ app.post("/api/monitor/config", async (req, res) => {
   }
 });
 
+// Route to instantly ingest the SG hackathon CSV data
+app.post("/api/admin/ingest-csv", (req, res) => {
+  const results = [];
+  let insertedCount = 0;
+
+  // Make sure your config_drift_events.csv is inside the /data folder!
+  fs.createReadStream("./data/config_drift_events.csv")
+    .pipe(csv())
+    .on("data", (row) => {
+      results.push(row);
+    })
+    .on("end", async () => {
+      console.log(
+        `Parsed ${results.length} rows from SG CSV. Pushing to database...`,
+      );
+
+      // Clear the old dummy data out before importing the real hackathon data
+      await DriftAlert.deleteMany({});
+
+      for (const event of results) {
+        // Map SG's exact CSV headers to our Mongoose Schema
+        const newAlert = new DriftAlert({
+          eventId: event.drift_event_id,
+          systemName: event.control_type, // e.g., "AWS CloudTrail" or "Firewall"
+          severity: event.severity ? event.severity.toUpperCase() : "LOW",
+          driftedKey: event.control_name,
+          expectedValue: event.baseline_value,
+          actualValue: event.current_value,
+          complianceImpact: event.compliance_impact,
+          changedBy: `${event.operator_name} (${event.operator_email})`, // Combine name and email
+          changeReason: event.change_reason,
+          status: event.status === "Resolved" ? "Remediated" : "Active Drift",
+          timestamp: event.change_date
+            ? new Date(event.change_date)
+            : Date.now(),
+        });
+
+        await newAlert.save();
+        insertedCount++;
+      }
+
+      res.status(200).json({
+        message: "Official Societe Generale Dataset successfully ingested!",
+        totalProcessed: insertedCount,
+      });
+    });
+});
+
 // Route for your friend to fetch all active alerts onto the React UI
 app.get("/api/alerts", async (req, res) => {
   try {
@@ -124,12 +174,10 @@ app.post("/api/remediate", async (req, res) => {
     );
 
     if (!updatedAlert) {
-      return res
-        .status(404)
-        .json({
-          message:
-            "No active drift alert found for this configuration parameter.",
-        });
+      return res.status(404).json({
+        message:
+          "No active drift alert found for this configuration parameter.",
+      });
     }
 
     res.status(200).json({
