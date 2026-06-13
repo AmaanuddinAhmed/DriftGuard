@@ -4,12 +4,13 @@ import MetricsBar from "./components/MetricsBar";
 import IncidentFeed from "./components/IncidentFeed";
 import DriftInspector from "./components/DriftInspector";
 import AddDriftEvent from "./components/AddDriftEvent";
-import { fetchAlerts, fetchSummary } from "./api/alerts";
+import { fetchAlerts, fetchSummary, fetchFeedStatus } from "./api/alerts";
 
 const App = () => {
   const [alerts, setAlerts] = useState([]);
   const [selected, setSelected] = useState(null);
   const [summary, setSummary] = useState(null);
+  const [feedStatus, setFeedStatus] = useState(null);
 
   const loadAlerts = useCallback(async () => {
     try {
@@ -33,15 +34,26 @@ const App = () => {
     }
   }, []);
 
+  const loadFeedStatus = useCallback(async () => {
+    try {
+      const data = await fetchFeedStatus();
+      setFeedStatus(data);
+    } catch (err) {
+      console.error("Failed to fetch feed status:", err);
+    }
+  }, []);
+
   useEffect(() => {
     loadAlerts();
     loadSummary();
+    loadFeedStatus();
     const interval = setInterval(() => {
       loadAlerts();
       loadSummary();
+      loadFeedStatus();
     }, 5000);
     return () => clearInterval(interval);
-  }, [loadAlerts, loadSummary]);
+  }, [loadAlerts, loadSummary, loadFeedStatus]);
 
   const handleRemediated = (id) => {
     setAlerts((prev) =>
@@ -101,7 +113,14 @@ const App = () => {
         </div>
         <span className="sg-live-pill">
           <span className="sg-live-dot"></span>
-          LIVE — polling every 5s
+          {feedStatus?.status === "streaming"
+            ? `LIVE — streaming ${feedStatus.ingestedCount}/${feedStatus.totalEvents} events`
+            : feedStatus?.status === "seeding" ||
+                feedStatus?.status === "loading"
+              ? "LIVE — initializing feed..."
+              : feedStatus?.status === "complete"
+                ? `LIVE — ${feedStatus.ingestedCount}/${feedStatus.totalEvents} events processed`
+                : "LIVE — polling every 5s"}
         </span>
       </div>
 

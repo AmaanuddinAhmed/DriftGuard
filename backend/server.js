@@ -9,6 +9,7 @@ const assetBaselines = require("./data/baseline_configs.json");
 const firewallBaseline = require("./baselines/firewall-baseline.json");
 const DriftAlert = require("./models/DriftAlert");
 const { analyzeCsvRow } = require("./utils/riskEngine");
+const { startLiveFeed } = require("./utils/liveFeed");
 
 const app = express();
 app.use(express.json());
@@ -19,7 +20,10 @@ const MONGO_URI = "mongodb://127.0.0.1:27017/driftguard";
 
 mongoose
   .connect(MONGO_URI)
-  .then(() => console.log("Connected to MongoDB successfully"))
+  .then(() => {
+    console.log("Connected to MongoDB successfully");
+    startLiveFeed(app, DriftAlert, analyzeCsvRow);
+  })
   .catch((err) => console.error("MongoDB Connection Failure:", err));
 
 // Quick sanity check route

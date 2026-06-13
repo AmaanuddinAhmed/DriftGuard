@@ -17,6 +17,11 @@ export const createEvent = async (payload) => {
   return res.data;
 };
 
+export const fetchFeedStatus = async () => {
+  const res = await axios.get(`${BASE_URL}/feed/status`);
+  return res.data;
+};
+
 export const remediateAlert = async (systemId, driftedKey) => {
   const res = await axios.post(`${BASE_URL}/remediate`, {
     systemId,
