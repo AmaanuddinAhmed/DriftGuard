@@ -4,11 +4,11 @@ const cors = require("cors");
 const { detailedDiff } = require("deep-object-diff");
 const fs = require("fs");
 const csv = require("csv-parser");
-const { evaluateDrift } = require("./utils/riskEngine");
 
-const baselineConfigs = require("./data/baseline_configs.json");
+const assetBaselines = require("./data/baseline_configs.json");
 const firewallBaseline = require("./baselines/firewall-baseline.json");
 const DriftAlert = require("./models/DriftAlert");
+const { analyzeCsvRow } = require("./utils/riskEngine");
 
 const app = express();
 app.use(express.json());
@@ -100,54 +100,46 @@ app.post("/api/monitor/config", async (req, res) => {
 app.post("/api/admin/ingest-csv", (req, res) => {
   const results = [];
   let insertedCount = 0;
-  let falsePositivesFiltered = 0;
 
+  // Make sure your config_drift_events.csv is inside the /data folder!
   fs.createReadStream("./data/config_drift_events.csv")
     .pipe(csv())
     .on("data", (row) => {
       results.push(row);
     })
     .on("end", async () => {
-      console.log(`Parsed ${results.length} rows. Running Risk Engine...`);
+      console.log(
+        `Parsed ${results.length} rows from SG CSV. Pushing to database...`,
+      );
 
+      // Clear the old dummy data out before importing the real hackathon data
       await DriftAlert.deleteMany({});
 
       for (const event of results) {
-        // 1. RUN THE RISK ENGINE
-        const analysis = evaluateDrift(
-          event.control_name,
-          event.baseline_value,
-          event.current_value,
-          event.change_reason,
-          event.operator_name,
-          event.severity,
-        );
+        const analysis = analyzeCsvRow(event);
 
-        // 2. FILTER OUT FALSE POSITIVES
-        // If it's a benign change, we skip adding it to the active alerts dashboard
-        if (!analysis.isAnomaly) {
-          falsePositivesFiltered++;
-          continue;
-        }
-
-        // 3. SAVE ACTUAL ANOMALIES
+        // Map SG's exact CSV headers to our Mongoose Schema, enriched
+        // with our own risk-engine output (severity/explanation/etc.)
         const newAlert = new DriftAlert({
           eventId: event.drift_event_id,
-          systemName: event.control_type,
-          severity: analysis.severity,
+          systemId: event.control_type, // group controls by category for the dashboard
+          systemName: event.control_name,
+          environment: "Production",
+          severity: analysis.severity, // computed by riskEngine, NOT copied from CSV
           driftedKey: event.control_name,
           expectedValue: event.baseline_value,
           actualValue: event.current_value,
-
-          // USE THE ENGINE'S GENERATED COMPLIANCE IMPACT HERE
           complianceImpact: analysis.complianceImpact,
-
           changedBy: `${event.operator_name} (${event.operator_email})`,
-          changeReason: analysis.explanation,
-          status: event.status === "Mitigated" ? "Remediated" : "Active Drift",
+          changeReason: event.change_reason,
+          status: analysis.isAnomaly ? "Active Drift" : "Remediated",
           timestamp: event.change_date
             ? new Date(event.change_date)
             : Date.now(),
+          isAnomaly: analysis.isAnomaly,
+          riskScore: analysis.riskScore,
+          explanation: analysis.explanation,
+          recommendedAction: analysis.recommendedAction,
         });
 
         await newAlert.save();
@@ -155,15 +147,47 @@ app.post("/api/admin/ingest-csv", (req, res) => {
       }
 
       res.status(200).json({
-        message: "Data ingestion & analysis complete!",
-        totalProcessed: results.length,
-        actualThreatsLogged: insertedCount,
-        falsePositivesFiltered: falsePositivesFiltered,
+        message: "Official Societe Generale Dataset successfully ingested!",
+        totalProcessed: insertedCount,
       });
     });
 });
 
-// Route for your friend to fetch all active alerts onto the React UI
+// Aggregate stats for the presentation/report and top-level dashboard cards
+app.get("/api/summary", async (req, res) => {
+  try {
+    const total = await DriftAlert.countDocuments();
+    const anomalies = await DriftAlert.countDocuments({ isAnomaly: true });
+    const severityBreakdown = await DriftAlert.aggregate([
+      { $group: { _id: "$severity", count: { $sum: 1 } } },
+    ]);
+    const byControlType = await DriftAlert.aggregate([
+      {
+        $group: {
+          _id: "$systemId",
+          count: { $sum: 1 },
+          anomalies: { $sum: { $cond: ["$isAnomaly", 1, 0] } },
+        },
+      },
+      { $sort: { anomalies: -1 } },
+    ]);
+    const complianceScore = total
+      ? Math.round(((total - anomalies) / total) * 100)
+      : 100;
+
+    res.json({
+      totalEvents: total,
+      anomalies,
+      anomalyRate: total ? Math.round((anomalies / total) * 100) : 0,
+      complianceScore,
+      severityBreakdown,
+      byControlType,
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 app.get("/api/alerts", async (req, res) => {
   try {
     const alerts = await DriftAlert.find().sort({ timestamp: -1 });

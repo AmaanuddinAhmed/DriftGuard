@@ -14,6 +14,12 @@ const DriftAlertSchema = new mongoose.Schema({
   changeReason: { type: String }, // Maps from change_reason
   status: { type: String, default: "Active Drift" }, // Maps from status
   timestamp: { type: Date, default: Date.now }, // Maps from change_date
+
+  // --- Risk engine enrichment fields ---
+  isAnomaly: { type: Boolean, default: false },
+  riskScore: { type: Number, default: 0 },
+  explanation: { type: String },
+  recommendedAction: { type: String },
 });
 
 module.exports = mongoose.model("DriftAlert", DriftAlertSchema);
