@@ -1,32 +1,39 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap");
 
 body {
   margin: 0;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+code,
+.mono {
+  font-family: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
 }
 
 :root {
-  --sg-black: #0d1117;
-  --sg-slate: #161b22;
-  --sg-slate-light: #21262d;
-  --sg-border: #30363d;
+  --sg-black: #0a0e14;
+  --sg-slate: #121822;
+  --sg-slate-light: #1c2530;
+  --sg-border: #2a3441;
   --sg-text: #e6edf3;
-  --sg-text-muted: #8b949e;
-  --sg-red: #ff4d4f;
-  --sg-red-glow: rgba(255, 77, 79, 0.35);
-  --sg-green: #3fb950;
-  --sg-orange: #f0883e;
-  --sg-yellow: #d29922;
-  --sg-accent: #58a6ff;
+  --sg-text-muted: #8b96a5;
+  --sg-red: #ff5d5d;
+  --sg-red-glow: rgba(255, 93, 93, 0.35);
+  --sg-green: #3ddc97;
+  --sg-green-glow: rgba(61, 220, 151, 0.35);
+  --sg-orange: #ffb454;
+  --sg-yellow: #ffb454;
+  --sg-accent: #5ec2e6;
+  --sg-accent-glow: rgba(94, 194, 230, 0.35);
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  background: var(--sg-black);
 }
 
 body {
@@ -35,21 +42,270 @@ body {
   font-family: "Inter", "Segoe UI", sans-serif;
 }
 
+/* ============ Layout shell ============ */
+
+.sg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--sg-border);
+}
+
+.sg-brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--sg-accent), var(--sg-green));
+  font-size: 1.1rem;
+  margin-right: 12px;
+  box-shadow: 0 0 18px var(--sg-accent-glow);
+  color: var(--sg-black);
+}
+
+.sg-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: var(--sg-text);
+}
+
+.sg-subtitle {
+  color: var(--sg-text-muted);
+  font-size: 0.8rem;
+  margin-top: 2px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.sg-live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--sg-slate-light);
+  border: 1px solid var(--sg-border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  color: var(--sg-text-muted);
+}
+
+.sg-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--sg-green);
+  box-shadow: 0 0 8px var(--sg-green-glow);
+  animation: blink-dot 2s infinite;
+}
+
+@keyframes blink-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* ============ Baseline integrity strip (signature element) ============ */
+
+.sg-integrity-strip {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 1.75rem;
+  background: var(--sg-slate);
+  border: 1px solid var(--sg-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  align-items: center;
+}
+
+.sg-integrity-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  color: var(--sg-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  margin-right: 14px;
+}
+
+.sg-integrity-track {
+  display: flex;
+  gap: 3px;
+  flex: 1;
+  height: 18px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.sg-integrity-segment {
+  flex: 1;
+  border-radius: 2px;
+  background: var(--sg-slate-light);
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
+  min-width: 4px;
+}
+
+.sg-integrity-segment.ok {
+  background: var(--sg-green);
+  box-shadow: 0 0 6px var(--sg-green-glow);
+}
+
+.sg-integrity-segment.drift-low {
+  background: var(--sg-orange);
+}
+
+.sg-integrity-segment.drift-high {
+  background: var(--sg-red);
+  box-shadow: 0 0 6px var(--sg-red-glow);
+  animation: pulse-red 1.8s infinite;
+}
+
+.sg-integrity-score {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-left: 14px;
+  white-space: nowrap;
+}
+
+/* ============ Cards ============ */
+
 .card-dark {
   background: var(--sg-slate);
   border: 1px solid var(--sg-border);
   border-radius: 10px;
+  color: var(--sg-text);
 }
+
+.card-dark .text-muted {
+  color: var(--sg-text-muted) !important;
+}
+
+.card-dark h1,
+.card-dark h2,
+.card-dark h3,
+.card-dark h4,
+.card-dark h5,
+.card-dark h6 {
+  color: var(--sg-text);
+}
+
+.card-dark hr {
+  border-color: var(--sg-border);
+  opacity: 0.6;
+}
+
+.card-dark .alert-danger {
+  background: rgba(255, 93, 93, 0.1);
+  border: 1px solid var(--sg-red);
+  color: var(--sg-red);
+}
+
+/* ============ Metrics ============ */
+
+.metric-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-label {
+  color: var(--sg-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.metric-value {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 1;
+}
+
+.metric-accent-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+}
+
+/* ============ Severity badges ============ */
+
+.severity-badge {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 9px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.sev-CRITICAL {
+  background: rgba(255, 93, 93, 0.15);
+  color: var(--sg-red);
+  border: 1px solid var(--sg-red);
+}
+.sev-HIGH {
+  background: rgba(255, 180, 84, 0.15);
+  color: var(--sg-orange);
+  border: 1px solid var(--sg-orange);
+}
+.sev-MEDIUM {
+  background: rgba(255, 180, 84, 0.1);
+  color: var(--sg-orange);
+  border: 1px solid rgba(255, 180, 84, 0.5);
+}
+.sev-LOW {
+  background: rgba(94, 194, 230, 0.12);
+  color: var(--sg-accent);
+  border: 1px solid var(--sg-accent);
+}
+
+/* ============ Compliance chip ============ */
+
+.compliance-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.5px;
+  padding: 3px 9px;
+  border-radius: 4px;
+  background: rgba(94, 194, 230, 0.08);
+  border: 1px solid var(--sg-border);
+  color: var(--sg-accent);
+  text-transform: uppercase;
+}
+
+/* ============ Drift pulse ============ */
 
 @keyframes pulse-red {
   0% {
     box-shadow: 0 0 0 0 var(--sg-red-glow);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(255, 77, 79, 0);
+    box-shadow: 0 0 0 10px rgba(255, 93, 93, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 77, 79, 0);
+    box-shadow: 0 0 0 0 rgba(255, 93, 93, 0);
   }
 }
 
@@ -57,58 +313,44 @@ body {
   animation: pulse-red 1.8s infinite;
 }
 
-.severity-badge {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  padding: 4px 10px;
-  border-radius: 4px;
-}
-
-.sev-CRITICAL {
-  background: rgba(255, 77, 79, 0.15);
-  color: var(--sg-red);
-  border: 1px solid var(--sg-red);
-}
-.sev-HIGH {
-  background: rgba(240, 136, 62, 0.15);
-  color: var(--sg-orange);
-  border: 1px solid var(--sg-orange);
-}
-.sev-MEDIUM {
-  background: rgba(210, 153, 34, 0.15);
-  color: var(--sg-yellow);
-  border: 1px solid var(--sg-yellow);
-}
-.sev-LOW {
-  background: rgba(88, 166, 255, 0.15);
-  color: var(--sg-accent);
-  border: 1px solid var(--sg-accent);
-}
+/* ============ Diff blocks ============ */
 
 .diff-expected {
-  background: rgba(63, 185, 80, 0.1);
+  background: rgba(61, 220, 151, 0.08);
   border-left: 3px solid var(--sg-green);
   color: var(--sg-green);
-  padding: 8px 12px;
-  font-family: "Courier New", monospace;
+  padding: 10px 14px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
   border-radius: 4px;
 }
 
 .diff-actual {
-  background: rgba(255, 77, 79, 0.1);
+  background: rgba(255, 93, 93, 0.08);
   border-left: 3px solid var(--sg-red);
   color: var(--sg-red);
-  padding: 8px 12px;
-  font-family: "Courier New", monospace;
+  padding: 10px 14px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
   border-radius: 4px;
 }
+
+.section-label {
+  color: var(--sg-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ============ Incident feed ============ */
 
 .incident-row {
   cursor: pointer;
   transition:
-    background 0.2s,
-    border-color 0.2s;
+    background 0.15s,
+    border-color 0.15s;
   border-left: 3px solid transparent;
 }
 
@@ -121,26 +363,62 @@ body {
   background: var(--sg-slate-light);
 }
 
+@keyframes incident-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+    background: var(--sg-slate-light);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.entering {
+  animation: incident-enter 0.5s ease-out;
+}
+
+.incident-system-id {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  color: var(--sg-text-muted);
+}
+
+.incident-timestamp {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  color: var(--sg-text-muted);
+  opacity: 0.7;
+}
+
+/* ============ Remediation button ============ */
+
 .remediate-btn {
-  background: linear-gradient(135deg, #ff4d4f, #cc3a3c);
+  background: linear-gradient(135deg, var(--sg-red), #cc3a3c);
   border: none;
   color: white;
   font-weight: 700;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
   padding: 14px 28px;
   border-radius: 8px;
-  letter-spacing: 0.5px;
   transition:
     transform 0.15s,
     box-shadow 0.15s;
 }
 
-.remediate-btn:hover {
+.remediate-btn:hover:not(:disabled) {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px var(--sg-red-glow);
 }
 
 .remediate-btn:disabled {
-  background: var(--sg-border);
+  background: var(--sg-slate-light);
+  color: var(--sg-green);
+  border: 1px solid var(--sg-border);
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
