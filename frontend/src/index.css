@@ -460,3 +460,32 @@ body {
 .form-control::placeholder {
   color: var(--sg-text-muted);
 }
+
+.alert-success-custom {
+  background: rgba(46, 204, 113, 0.1);
+  border: 1px solid var(--sg-green);
+  border-left: 3px solid var(--sg-green);
+  color: var(--sg-green);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+}
+
+/* Dark-themed scrollbars for scrollable panels */
+.card-dark::-webkit-scrollbar {
+  width: 8px;
+}
+.card-dark::-webkit-scrollbar-track {
+  background: var(--sg-slate);
+  border-radius: 4px;
+}
+.card-dark::-webkit-scrollbar-thumb {
+  background: var(--sg-border);
+  border-radius: 4px;
+}
+.card-dark::-webkit-scrollbar-thumb:hover {
+  background: var(--sg-text-muted);
+}
+.card-dark {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sg-border) var(--sg-slate);
+}

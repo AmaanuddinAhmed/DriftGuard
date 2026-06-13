@@ -110,7 +110,7 @@ const AddDriftEvent = ({ onCreated }) => {
       {open && (
         <form className="mt-3" onSubmit={handleSubmit}>
           <div className="row g-2">
-            <div className="col-md-6">
+            <div className="col-md-3">
               <label className="section-label">Control Name</label>
               <input
                 className="form-control form-control-sm"
@@ -119,7 +119,7 @@ const AddDriftEvent = ({ onCreated }) => {
                 onChange={update("control_name")}
               />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-3">
               <label className="section-label">Control Type</label>
               <select
                 className="form-select form-select-sm"
@@ -134,7 +134,7 @@ const AddDriftEvent = ({ onCreated }) => {
               </select>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-3">
               <label className="section-label">Baseline State</label>
               <select
                 className="form-select form-select-sm"
@@ -145,7 +145,7 @@ const AddDriftEvent = ({ onCreated }) => {
                 <option value="False">Disabled</option>
               </select>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-3">
               <label className="section-label">Current State</label>
               <select
                 className="form-select form-select-sm"
@@ -157,7 +157,7 @@ const AddDriftEvent = ({ onCreated }) => {
               </select>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-3">
               <label className="section-label">Change Reason</label>
               <select
                 className="form-select form-select-sm"
@@ -171,7 +171,7 @@ const AddDriftEvent = ({ onCreated }) => {
                 ))}
               </select>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-3">
               <label className="section-label">Pipeline Status</label>
               <select
                 className="form-select form-select-sm"
@@ -186,7 +186,7 @@ const AddDriftEvent = ({ onCreated }) => {
               </select>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-3">
               <label className="section-label">Approver Name (optional)</label>
               <input
                 className="form-control form-control-sm"
@@ -195,7 +195,7 @@ const AddDriftEvent = ({ onCreated }) => {
                 onChange={update("approver_name")}
               />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-3">
               <label className="section-label">Compliance Tag</label>
               <select
                 className="form-select form-select-sm"
@@ -216,13 +216,7 @@ const AddDriftEvent = ({ onCreated }) => {
           )}
 
           {lastResult && (
-            <div
-              className="alert-danger small mt-2"
-              style={{
-                borderLeftColor: "var(--sg-green)",
-                color: "var(--sg-green)",
-              }}
-            >
+            <div className="alert-success-custom small mt-2">
               Ingested as {lastResult.eventId} — scored{" "}
               <strong>{lastResult.riskScore}/100</strong> ({lastResult.severity}
               ). Check the incident feed.

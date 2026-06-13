@@ -1,7 +1,7 @@
 import React from "react";
 
 const MetricCard = ({ label, value, accent, suffix = "" }) => (
-  <div className="col-md-3 col-6 mb-3">
+  <div className="col-md-4 col-6 mb-3">
     <div className="card-dark metric-card p-3 h-100">
       <div
         className="metric-accent-bar"
