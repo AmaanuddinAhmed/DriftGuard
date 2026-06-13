@@ -443,3 +443,20 @@ body {
   background-color: var(--sg-slate);
   color: var(--sg-text);
 }
+
+.form-control {
+  background-color: var(--sg-slate-light);
+  border: 1px solid var(--sg-border);
+  color: var(--sg-text);
+}
+
+.form-control:focus {
+  background-color: var(--sg-slate-light);
+  border-color: var(--sg-accent);
+  color: var(--sg-text);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.08);
+}
+
+.form-control::placeholder {
+  color: var(--sg-text-muted);
+}

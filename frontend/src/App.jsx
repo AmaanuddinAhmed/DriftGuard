@@ -3,6 +3,7 @@ import { FaShieldAlt } from "react-icons/fa";
 import MetricsBar from "./components/MetricsBar";
 import IncidentFeed from "./components/IncidentFeed";
 import DriftInspector from "./components/DriftInspector";
+import AddDriftEvent from "./components/AddDriftEvent";
 import { fetchAlerts, fetchSummary } from "./api/alerts";
 
 const App = () => {
@@ -132,6 +133,13 @@ const App = () => {
 
       <div className="row">
         <div className="col-md-5 mb-3">
+          <AddDriftEvent
+            onCreated={(created) => {
+              loadAlerts();
+              loadSummary();
+              setSelected(created);
+            }}
+          />
           <IncidentFeed
             alerts={alerts}
             selectedId={selected?._id}
