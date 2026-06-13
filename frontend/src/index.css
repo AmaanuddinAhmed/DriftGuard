@@ -423,3 +423,23 @@ body {
   transform: none;
   box-shadow: none;
 }
+
+/* Dark-theme native <select> override (used by feed filters) */
+.form-select {
+  background-color: var(--sg-slate-light);
+  border: 1px solid var(--sg-border);
+  color: var(--sg-text);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%238b96a5' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.form-select:focus {
+  background-color: var(--sg-slate-light);
+  border-color: var(--sg-border);
+  color: var(--sg-text);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.08);
+}
+
+.form-select option {
+  background-color: var(--sg-slate);
+  color: var(--sg-text);
+}
