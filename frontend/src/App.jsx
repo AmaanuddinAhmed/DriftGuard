@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { FaShieldAlt } from "react-icons/fa";
 import MetricsBar from "./components/MetricsBar";
 import IncidentFeed from "./components/IncidentFeed";
 import DriftInspector from "./components/DriftInspector";
@@ -36,24 +37,80 @@ const App = () => {
     );
   };
 
+  // Build per-system status for the baseline integrity strip
+  const systemMap = new Map();
+  alerts.forEach((a) => {
+    const existing = systemMap.get(a.systemId);
+    const isActive = a.status === "Active Drift";
+    const rank = { CRITICAL: 3, HIGH: 2, MEDIUM: 1, LOW: 0 };
+    if (!existing) {
+      systemMap.set(a.systemId, {
+        active: isActive,
+        severity: a.severity,
+        rank: isActive ? rank[a.severity] : -1,
+      });
+    } else if (isActive && (rank[a.severity] ?? -1) > existing.rank) {
+      systemMap.set(a.systemId, {
+        active: true,
+        severity: a.severity,
+        rank: rank[a.severity],
+      });
+    }
+  });
+  const systems = Array.from(systemMap.values());
+  const driftingCount = systems.filter((s) => s.active).length;
+  const integrityScore = systems.length
+    ? Math.round(((systems.length - driftingCount) / systems.length) * 100)
+    : 100;
+
+  const segmentClass = (s) => {
+    if (!s.active) return "ok";
+    return s.severity === "CRITICAL" || s.severity === "HIGH"
+      ? "drift-high"
+      : "drift-low";
+  };
+
   return (
     <div className="container-fluid p-4">
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <div>
-          <h3 className="fw-bold mb-0">🛡️ DriftGuard</h3>
-          <div className="text-muted small">
-            Security Control Drift & Misconfiguration Detection
+      <div className="sg-header">
+        <div className="d-flex align-items-center">
+          <span className="sg-brand-mark">
+            <FaShieldAlt />
+          </span>
+          <div>
+            <h3 className="sg-title">DriftGuard</h3>
+            <div className="sg-subtitle">
+              security_control_drift // misconfiguration_detection
+            </div>
           </div>
         </div>
+        <span className="sg-live-pill">
+          <span className="sg-live-dot"></span>
+          LIVE — polling every 5s
+        </span>
+      </div>
+
+      <div className="sg-integrity-strip">
+        <span className="sg-integrity-label">Baseline Integrity</span>
+        <div className="sg-integrity-track">
+          {systems.length === 0 ? (
+            <div className="sg-integrity-segment"></div>
+          ) : (
+            systems.map((s, i) => (
+              <div
+                key={i}
+                className={`sg-integrity-segment ${segmentClass(s)}`}
+              ></div>
+            ))
+          )}
+        </div>
         <span
-          className="badge"
+          className="sg-integrity-score"
           style={{
-            background: "var(--sg-slate-light)",
-            border: "1px solid var(--sg-border)",
-            padding: "8px 14px",
+            color: integrityScore > 80 ? "var(--sg-green)" : "var(--sg-orange)",
           }}
         >
-          🟢 Live • Polling every 5s
+          {integrityScore}% COMPLIANT
         </span>
       </div>
 
