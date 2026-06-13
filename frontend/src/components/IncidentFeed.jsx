@@ -2,10 +2,13 @@ import IncidentCard from "./IncidentCard";
 import React, { useEffect, useRef, useState } from "react";
 
 const severityOrder = { CRITICAL: 0, HIGH: 1, MEDIUM: 2, LOW: 3 };
+const SEVERITIES = ["CRITICAL", "HIGH", "MEDIUM", "LOW"];
 
 const IncidentFeed = ({ alerts, selectedId, onSelect }) => {
   const seenIds = useRef(new Set());
   const [newIds, setNewIds] = useState(new Set());
+  const [severityFilter, setSeverityFilter] = useState("ALL");
+  const [statusFilter, setStatusFilter] = useState("ALL");
 
   useEffect(() => {
     const incoming = alerts.filter((a) => !seenIds.current.has(a._id));
@@ -24,7 +27,15 @@ const IncidentFeed = ({ alerts, selectedId, onSelect }) => {
     }
   }, [alerts]);
 
-  const sorted = [...alerts].sort((a, b) => {
+  const filtered = alerts.filter((a) => {
+    if (severityFilter !== "ALL" && a.severity !== severityFilter) return false;
+    if (statusFilter === "DRIFTED" && a.status !== "Active Drift") return false;
+    if (statusFilter === "REMEDIATED" && a.status === "Active Drift")
+      return false;
+    return true;
+  });
+
+  const sorted = [...filtered].sort((a, b) => {
     if (a.status !== b.status) return a.status === "Active Drift" ? -1 : 1;
     return severityOrder[a.severity] - severityOrder[b.severity];
   });
@@ -38,7 +49,37 @@ const IncidentFeed = ({ alerts, selectedId, onSelect }) => {
         className="p-3 border-bottom"
         style={{ borderColor: "var(--sg-border)" }}
       >
-        <h6 className="mb-0 fw-bold">Active Incidents Feed</h6>
+        <div className="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
+          <h6 className="mb-0 fw-bold">Active Incidents Feed</h6>
+          <span className="text-muted small">
+            {sorted.length} / {alerts.length}
+          </span>
+        </div>
+        <div className="d-flex gap-2 flex-wrap">
+          <select
+            className="form-select form-select-sm"
+            style={{ width: "auto" }}
+            value={severityFilter}
+            onChange={(e) => setSeverityFilter(e.target.value)}
+          >
+            <option value="ALL">All Severities</option>
+            {SEVERITIES.map((s) => (
+              <option key={s} value={s}>
+                {s}
+              </option>
+            ))}
+          </select>
+          <select
+            className="form-select form-select-sm"
+            style={{ width: "auto" }}
+            value={statusFilter}
+            onChange={(e) => setStatusFilter(e.target.value)}
+          >
+            <option value="ALL">All Statuses</option>
+            <option value="DRIFTED">Active Drift</option>
+            <option value="REMEDIATED">Remediated</option>
+          </select>
+        </div>
       </div>
       <div>
         {sorted.map((alert) => (
@@ -54,7 +95,9 @@ const IncidentFeed = ({ alerts, selectedId, onSelect }) => {
           </div>
         ))}
         {sorted.length === 0 && (
-          <div className="p-4 text-center text-muted">No alerts yet.</div>
+          <div className="p-4 text-center text-muted">
+            No alerts match the selected filters.
+          </div>
         )}
       </div>
     </div>

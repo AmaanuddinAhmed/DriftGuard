@@ -3,11 +3,12 @@ import { FaShieldAlt } from "react-icons/fa";
 import MetricsBar from "./components/MetricsBar";
 import IncidentFeed from "./components/IncidentFeed";
 import DriftInspector from "./components/DriftInspector";
-import { fetchAlerts } from "./api/alerts";
+import { fetchAlerts, fetchSummary } from "./api/alerts";
 
 const App = () => {
   const [alerts, setAlerts] = useState([]);
   const [selected, setSelected] = useState(null);
+  const [summary, setSummary] = useState(null);
 
   const loadAlerts = useCallback(async () => {
     try {
@@ -22,11 +23,24 @@ const App = () => {
     }
   }, []);
 
+  const loadSummary = useCallback(async () => {
+    try {
+      const data = await fetchSummary();
+      setSummary(data);
+    } catch (err) {
+      console.error("Failed to fetch summary:", err);
+    }
+  }, []);
+
   useEffect(() => {
     loadAlerts();
-    const interval = setInterval(loadAlerts, 5000);
+    loadSummary();
+    const interval = setInterval(() => {
+      loadAlerts();
+      loadSummary();
+    }, 5000);
     return () => clearInterval(interval);
-  }, [loadAlerts]);
+  }, [loadAlerts, loadSummary]);
 
   const handleRemediated = (id) => {
     setAlerts((prev) =>
@@ -114,7 +128,7 @@ const App = () => {
         </span>
       </div>
 
-      <MetricsBar alerts={alerts} />
+      <MetricsBar alerts={alerts} summary={summary} />
 
       <div className="row">
         <div className="col-md-5 mb-3">
