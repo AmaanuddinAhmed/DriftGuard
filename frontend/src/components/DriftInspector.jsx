@@ -57,27 +57,43 @@ const DriftInspector = ({ alert, onRemediated }) => {
         </div>
       </div>
 
-      <div className="mb-4">
-        <div className="section-label text-info">
-          Engine Analysis & Detection Reason
+      {typeof alert.riskScore === "number" && (
+        <div className="mb-3">
+          <div className="section-label">Risk Score</div>
+          <div className="d-flex align-items-center gap-2">
+            <div
+              style={{
+                flex: 1,
+                height: 8,
+                background: "var(--sg-slate-light)",
+                borderRadius: 4,
+                overflow: "hidden",
+              }}
+            >
+              <div
+                style={{
+                  width: `${alert.riskScore}%`,
+                  height: "100%",
+                  background:
+                    alert.riskScore >= 80
+                      ? "var(--sg-red)"
+                      : alert.riskScore >= 55
+                        ? "var(--sg-orange)"
+                        : "var(--sg-green)",
+                }}
+              />
+            </div>
+            <span className="mono">{alert.riskScore}/100</span>
+          </div>
         </div>
-        <div
-          className="p-3 rounded"
-          style={{
-            background: "rgba(23, 162, 184, 0.1)",
-            border: "1px solid var(--sg-info, #17a2b8)",
-            color: "#e0e0e0",
-          }}
-        >
-          <span className="mono" style={{ fontSize: "0.95rem" }}>
-            {alert.changeReason}
-          </span>
+      )}
+
+      {alert.explanation && (
+        <div className="mb-3">
+          <div className="section-label">Why This Was Flagged</div>
+          <p className="small mb-0">{alert.explanation}</p>
         </div>
-        <div className="text-muted small mt-2">
-          <strong>Detected By:</strong> RiskEngine v1.0 |{" "}
-          <strong>Operator:</strong> {alert.changedBy}
-        </div>
-      </div>
+      )}
 
       <div className="mb-4">
         <div className="section-label">Compliance Impact</div>
@@ -103,6 +119,13 @@ const DriftInspector = ({ alert, onRemediated }) => {
           </div>
         )}
       </div>
+
+      {alert.recommendedAction && (
+        <div className="mb-3">
+          <div className="section-label">Recommended Action</div>
+          <p className="small mb-0">{alert.recommendedAction}</p>
+        </div>
+      )}
 
       {error && <div className="alert alert-danger small">{error}</div>}
 
