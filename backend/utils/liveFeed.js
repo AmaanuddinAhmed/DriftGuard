@@ -35,6 +35,63 @@ function rowToAlertDoc(row, analysis) {
   };
 }
 
+async function runFeedCycle(
+  app,
+  DriftAlert,
+  analyzeCsvRow,
+  csvPath,
+  state,
+  isFirstRun,
+) {
+  const rows = await new Promise((resolve, reject) => {
+    const r = [];
+    fs.createReadStream(csvPath)
+      .pipe(csv())
+      .on("data", (row) => r.push(row))
+      .on("error", reject)
+      .on("end", () => resolve(r));
+  });
+
+  const queue = shuffle(rows);
+  state.totalEvents = queue.length;
+  state.ingestedCount = 0;
+  state.status = "seeding";
+
+  await DriftAlert.deleteMany({});
+
+  const seedRows = queue.splice(0, Math.min(SEED_BATCH_SIZE, queue.length));
+  const seedDocs = seedRows.map((row) =>
+    rowToAlertDoc(row, analyzeCsvRow(row)),
+  );
+  await DriftAlert.insertMany(seedDocs);
+  state.ingestedCount = seedDocs.length;
+  state.status = "streaming";
+
+  console.log(
+    `LiveFeed: seeded ${seedDocs.length}, streaming ${queue.length} remaining at ${DRIP_INTERVAL_MS / 1000}s intervals`,
+  );
+
+  return new Promise((resolve) => {
+    const interval = setInterval(async () => {
+      if (queue.length === 0) {
+        clearInterval(interval);
+        state.status = "restarting";
+        console.log("LiveFeed: cycle complete — restarting simulation");
+        resolve();
+        return;
+      }
+      try {
+        const row = queue.shift();
+        const analysis = analyzeCsvRow(row);
+        await new DriftAlert(rowToAlertDoc(row, analysis)).save();
+        state.ingestedCount += 1;
+      } catch (err) {
+        console.error("LiveFeed insert error:", err.message);
+      }
+    }, DRIP_INTERVAL_MS);
+  });
+}
+
 function startLiveFeed(
   app,
   DriftAlert,
@@ -56,60 +113,20 @@ function startLiveFeed(
     });
   });
 
-  const rows = [];
-  fs.createReadStream(csvPath)
-    .pipe(csv())
-    .on("data", (row) => rows.push(row))
-    .on("error", (err) => {
+  async function loop() {
+    try {
+      while (true) {
+        state.startedAt = new Date();
+        await runFeedCycle(app, DriftAlert, analyzeCsvRow, csvPath, state);
+      }
+    } catch (err) {
       state.status = "error";
       state.error = err.message;
-      console.error("LiveFeed error:", err);
-    })
-    .on("end", async () => {
-      try {
-        const queue = shuffle(rows);
-        state.totalEvents = queue.length;
-        state.status = "seeding";
+      console.error("LiveFeed startup error:", err);
+    }
+  }
 
-        await DriftAlert.deleteMany({});
-
-        const seedRows = queue.splice(
-          0,
-          Math.min(SEED_BATCH_SIZE, queue.length),
-        );
-        const seedDocs = seedRows.map((row) =>
-          rowToAlertDoc(row, analyzeCsvRow(row)),
-        );
-        await DriftAlert.insertMany(seedDocs);
-        state.ingestedCount = seedDocs.length;
-        state.status = "streaming";
-
-        console.log(
-          `LiveFeed: seeded ${seedDocs.length}, streaming ${queue.length} remaining at ${DRIP_INTERVAL_MS / 1000}s intervals`,
-        );
-
-        const interval = setInterval(async () => {
-          if (queue.length === 0) {
-            state.status = "complete";
-            clearInterval(interval);
-            console.log("LiveFeed: complete");
-            return;
-          }
-          try {
-            const row = queue.shift();
-            const analysis = analyzeCsvRow(row);
-            await new DriftAlert(rowToAlertDoc(row, analysis)).save();
-            state.ingestedCount += 1;
-          } catch (err) {
-            console.error("LiveFeed insert error:", err.message);
-          }
-        }, DRIP_INTERVAL_MS);
-      } catch (err) {
-        state.status = "error";
-        state.error = err.message;
-        console.error("LiveFeed startup error:", err);
-      }
-    });
+  loop();
 }
 
 module.exports = { startLiveFeed };
