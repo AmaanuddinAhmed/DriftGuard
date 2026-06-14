@@ -4,7 +4,7 @@
 
 DriftGuard is a full-stack monitoring dashboard that continuously ingests security configuration change events, independently scores each one for risk, and surfaces anomalous drifts with plain-English explanations, compliance mappings, and actionable remediation steps.
 
-Built for Problem Statement 02 — Societe Generale Hackathon 2026.
+Built for Problem Statement 02 — Neo Hire || Société Générale || 2027 PESIT Hackathon.
 
 ---
 

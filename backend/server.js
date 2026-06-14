@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+require("dotenv").config();
 
 const DriftAlert = require("./models/DriftAlert");
 const { analyzeCsvRow } = require("./utils/riskEngine");
@@ -14,7 +15,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const MONGO_URI = "mongodb://127.0.0.1:27017/driftguard";
+const MONGO_URI =
+  process.env.MONGO_URI || "mongodb://127.0.0.1:27017/driftguard";
 
 mongoose
   .connect(MONGO_URI)

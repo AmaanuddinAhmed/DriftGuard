@@ -1,6 +1,6 @@
 # DriftGuard — Security Control Drift Audit Report
 
-**Dataset:** `config_drift_events.csv` (Societe Generale hackathon dataset)
+**Dataset:** `config_drift_events.csv` (Société Générale hackathon dataset)
 **Total events analyzed:** 1,000
 **Analysis engine:** DriftGuard Risk Engine (`backend/utils/riskEngine.js`)
 
