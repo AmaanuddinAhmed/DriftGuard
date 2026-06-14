@@ -168,6 +168,42 @@ const App = () => {
           <DriftInspector alert={selected} onRemediated={handleRemediated} />
         </div>
       </div>
+
+      <footer
+        style={{
+          borderTop: "1px solid var(--sg-border)",
+          padding: "1.25rem 2rem",
+          marginTop: "1rem",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "0.4rem",
+          textAlign: "center",
+        }}
+      >
+        <span
+          style={{
+            color: "var(--sg-text-muted)",
+            fontSize: "0.78rem",
+            letterSpacing: "0.02em",
+          }}
+        >
+          Designed &amp; developed by{" "}
+          <span style={{ color: "var(--sg-text)" }}>Amaanuddin Ahmed</span>{" "}
+          &amp; <span style={{ color: "var(--sg-text)" }}>Arpita Ojha</span>
+        </span>
+        <span
+          style={{
+            color: "var(--sg-text-muted)",
+            fontSize: "0.75rem",
+            letterSpacing: "0.02em",
+          }}
+        >
+          Neo Hire || Société Générale || 2027 PESIT Hackathon &nbsp;·&nbsp;
+          Problem Statement 02 — Security Control Drift &amp; Misconfiguration
+          Detection
+        </span>
+      </footer>
     </div>
   );
 };

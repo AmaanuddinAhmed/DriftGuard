@@ -8,7 +8,7 @@ export const fetchAlerts = async () => {
 };
 
 export const fetchSummary = async () => {
-  const res = await axios.get(`${BASE_URL}/summary`);
+  const res = await axios.get(`${BASE_URL}/alerts/summary`);
   return res.data;
 };
 
