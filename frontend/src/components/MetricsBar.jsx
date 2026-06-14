@@ -28,13 +28,8 @@ const MetricsBar = ({ alerts, summary }) => {
   const activeTotal = alerts.filter((a) => a.status === "Active Drift").length;
   const total = alerts.length || 1;
 
-  // Compliance score reflects LIVE remediation actions (status-based),
-  // so it updates the moment a user clicks "Execute Auto-Remediation".
   const complianceScore = Math.round(((total - activeTotal) / total) * 100);
 
-  // These come from /api/summary — the risk engine's batch analysis of the
-  // full ingested dataset (anomaly rate doesn't change with remediation,
-  // since it reflects what was originally detected).
   const totalEvents = summary?.totalEvents ?? alerts.length;
   const anomalyRate = summary?.anomalyRate ?? null;
 

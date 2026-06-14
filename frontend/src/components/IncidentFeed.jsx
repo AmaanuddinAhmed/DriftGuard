@@ -37,7 +37,9 @@ const IncidentFeed = ({ alerts, selectedId, onSelect }) => {
 
   const sorted = [...filtered].sort((a, b) => {
     if (a.status !== b.status) return a.status === "Active Drift" ? -1 : 1;
-    return severityOrder[a.severity] - severityOrder[b.severity];
+    if (severityOrder[a.severity] !== severityOrder[b.severity])
+      return severityOrder[a.severity] - severityOrder[b.severity];
+    return new Date(b.timestamp) - new Date(a.timestamp);
   });
 
   return (
