@@ -1,17 +1,9 @@
-// liveFeed.js
-// Simulates a continuous monitoring pipeline: on server start, clears
-// existing alerts, seeds the dashboard with an initial batch so it isn't
-// empty, then drips in the remaining events from config_drift_events.csv
-// one at a time on an interval — each one passed through the same
-// analyzeCsvRow risk engine used by the manual ingest route.
-
 const fs = require("fs");
 const csv = require("csv-parser");
 
-const SEED_BATCH_SIZE = 40; // events inserted immediately on startup
-const DRIP_INTERVAL_MS = 4000; // time between subsequent events
+const SEED_BATCH_SIZE = 40;
+const DRIP_INTERVAL_MS = 4000;
 
-// Fisher-Yates shuffle
 function shuffle(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -43,14 +35,6 @@ function rowToAlertDoc(row, analysis) {
   };
 }
 
-/**
- * Starts the live feed simulation.
- *
- * @param {object} app - Express app (used to register /api/feed/status)
- * @param {object} DriftAlert - Mongoose model
- * @param {function} analyzeCsvRow - risk engine analysis function
- * @param {string} csvPath - path to config_drift_events.csv
- */
 function startLiveFeed(
   app,
   DriftAlert,
@@ -58,7 +42,7 @@ function startLiveFeed(
   csvPath = "./data/config_drift_events.csv",
 ) {
   const state = {
-    status: "loading", // loading | seeding | streaming | complete | error
+    status: "loading",
     totalEvents: 0,
     ingestedCount: 0,
     startedAt: new Date(),
@@ -79,7 +63,7 @@ function startLiveFeed(
     .on("error", (err) => {
       state.status = "error";
       state.error = err.message;
-      console.error("LiveFeed: failed to read CSV", err);
+      console.error("LiveFeed error:", err);
     })
     .on("end", async () => {
       try {
@@ -87,10 +71,8 @@ function startLiveFeed(
         state.totalEvents = queue.length;
         state.status = "seeding";
 
-        // Clear out any previously ingested data so the simulation starts fresh.
         await DriftAlert.deleteMany({});
 
-        // Seed an initial batch so the dashboard isn't empty on first load.
         const seedRows = queue.splice(
           0,
           Math.min(SEED_BATCH_SIZE, queue.length),
@@ -103,31 +85,29 @@ function startLiveFeed(
         state.status = "streaming";
 
         console.log(
-          `LiveFeed: seeded ${seedDocs.length} events, streaming remaining ${queue.length} every ${DRIP_INTERVAL_MS / 1000}s`,
+          `LiveFeed: seeded ${seedDocs.length}, streaming ${queue.length} remaining at ${DRIP_INTERVAL_MS / 1000}s intervals`,
         );
 
         const interval = setInterval(async () => {
           if (queue.length === 0) {
             state.status = "complete";
             clearInterval(interval);
-            console.log("LiveFeed: simulation complete — all events ingested.");
+            console.log("LiveFeed: complete");
             return;
           }
-
-          const row = queue.shift();
           try {
+            const row = queue.shift();
             const analysis = analyzeCsvRow(row);
-            const doc = rowToAlertDoc(row, analysis);
-            await new DriftAlert(doc).save();
+            await new DriftAlert(rowToAlertDoc(row, analysis)).save();
             state.ingestedCount += 1;
           } catch (err) {
-            console.error("LiveFeed: failed to insert event", err.message);
+            console.error("LiveFeed insert error:", err.message);
           }
         }, DRIP_INTERVAL_MS);
       } catch (err) {
         state.status = "error";
         state.error = err.message;
-        console.error("LiveFeed: startup failed", err);
+        console.error("LiveFeed startup error:", err);
       }
     });
 }

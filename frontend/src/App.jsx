@@ -16,7 +16,6 @@ const App = () => {
     try {
       const data = await fetchAlerts();
       setAlerts(data);
-      // keep selected alert in sync with latest status
       setSelected((prev) =>
         prev ? data.find((a) => a._id === prev._id) || prev : prev,
       );
@@ -64,7 +63,6 @@ const App = () => {
     );
   };
 
-  // Build per-system status for the baseline integrity strip
   const systemMap = new Map();
   alerts.forEach((a) => {
     const existing = systemMap.get(a.systemId);
